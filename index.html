@@ -6,8 +6,10 @@
     <title>The Future of Work is Digital - Victor Adekunle</title>
     <link rel="stylesheet" href="styles.css">
     <!-- External fonts with fallbacks -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="A presentation on digital skills and the future of work by Victor Adekunle">
+    <meta name="author" content="Victor Adekunle">
     
     <!-- Inline critical CSS for immediate styling -->
     <style>
@@ -68,16 +70,16 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <h3>Victor Adekunle</h3>
+                <h3>Digital Future</h3>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#slide1" class="nav-link">Home</a></li>
-                <li><a href="#slide2" class="nav-link">Skills Matter</a></li>
-                <li><a href="#slide3" class="nav-link">Mindset</a></li>
-                <li><a href="#slide4" class="nav-link">Tools</a></li>
-                <li><a href="#slide5" class="nav-link">Action</a></li>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#slide-1" class="nav-link active">Introduction</a></li>
+                <li><a href="#slide-2" class="nav-link">Digital Skills</a></li>
+                <li><a href="#slide-3" class="nav-link">Mindset</a></li>
+                <li><a href="#slide-4" class="nav-link">Tools</a></li>
+                <li><a href="#slide-5" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -85,98 +87,116 @@
         </div>
     </nav>
 
-    <!-- Slide 1: Hook + Opening Insight -->
-    <section id="slide1" class="slide slide-1">
+    <!-- Progress Bar -->
+    <div class="progress-bar-fixed">
+        <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- Slide 1: The Future of Work is Digital -->
+    <section class="slide slide-1" id="slide-1">
         <div class="container">
             <div class="slide-content">
-                <div class="text-content">
-                    <h1 class="slide-title animate-fade-in">The Future of Work is Digital: Are You Ready?</h1>
+                <div>
+                    <h1 class="slide-title">
+                        The Future of Work is <span class="highlight">Digital</span>: Are You Ready?
+                    </h1>
                     
-                    <div class="stat-highlight animate-slide-up">
-                        <div class="stat-box">
+                    <div class="stat-highlight">
+                        <div class="stat-box success">
                             <h2>170M</h2>
-                            <p>New jobs created by 2030</p>
+                            <p>New Jobs Created</p>
                         </div>
                         <div class="vs-icon">VS</div>
                         <div class="stat-box danger">
                             <h2>92M</h2>
-                            <p>Jobs that will disappear</p>
+                            <p>Jobs Disappearing</p>
                         </div>
                     </div>
-                    
-                    <blockquote class="quote animate-fade-in-delay">
-                        <p>"That's not just a shift. That's a full-on career earthquake. And the shock absorbers? <strong>Digital skills.</strong>"</p>
-                        <cite>— World Economic Forum, Future of Jobs Report 2025</cite>
-                    </blockquote>
-                    
-                    <div class="wisdom-quote animate-fade-in-delay-2">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"The future belongs to those willing to learn, unlearn, and relearn."</p>
-                        <span>— Alvin Toffler</span>
+
+                    <div class="quote">
+                        <p>"By 2025, 50% of all employees will need reskilling as adoption of technology increases."</p>
+                        <cite>- World Economic Forum</cite>
+                    </div>
+
+                    <div class="wisdom-quote">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        <p>"The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn."</p>
+                        <span>- Alvin Toffler</span>
                     </div>
                 </div>
-                <div class="visual-content">
-                    <div class="chart-container animate-slide-right">
-                        <div class="chart old-jobs">
-                            <div class="chart-bar shrinking"></div>
-                            <label>Traditional Jobs</label>
+
+                <div class="chart-container">
+                    <div class="chart">
+                        <div class="chart-bar growing" style="height: 170px;">
+                            <label>New Jobs</label>
                         </div>
-                        <div class="chart digital-jobs">
-                            <div class="chart-bar growing"></div>
-                            <label>Digital Skills Demand</label>
+                        <div class="chart-bar shrinking" style="height: 92px;">
+                            <label>Lost Jobs</label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
         </div>
     </section>
 
-    <!-- Slide 2: Why Digital Skills Matter -->
-    <section id="slide2" class="slide slide-2">
+    <!-- Slide 2: Digital Skills -->
+    <section class="slide slide-2" id="slide-2">
         <div class="container">
             <div class="slide-content">
-                <h1 class="slide-title">Digital Skills: The New Passport to Employability</h1>
+                <h1 class="slide-title">Digital Skills: The New <span class="highlight">Passport</span> to Employability</h1>
                 
                 <div class="key-points">
-                    <div class="point animate-fade-in">
-                        <i class="fas fa-check-circle"></i>
-                        <p>Digital literacy is now as essential as reading and writing</p>
+                    <div class="point">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        <p><strong>Digital literacy</strong> is no longer optional - it's essential for survival in the modern workplace.</p>
                     </div>
-                    <div class="point animate-fade-in-delay">
-                        <i class="fas fa-check-circle"></i>
-                        <p>60% of workers will need reskilling by 2027</p>
+                    <div class="point">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <p><strong>60% of workers</strong> will need significant reskilling by 2025 to remain competitive.</p>
                     </div>
-                    <div class="point animate-fade-in-delay-2">
-                        <i class="fas fa-check-circle"></i>
-                        <p>Companies now hire for skill, not just degrees</p>
+                    <div class="point">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                        <p><strong>Skills matter more than degrees</strong> - employers value what you can do, not just what you know.</p>
                     </div>
                 </div>
 
                 <div class="skills-grid">
-                    <h3>Top In-Demand Skills:</h3>
+                    <h3>Essential <span class="highlight">Digital Tools</span> Everyone Should Master</h3>
                     <div class="skills-container">
-                        <div class="skill-card animate-slide-up">
-                            <i class="fas fa-file-alt"></i>
-                            <h4>CV Creation Tools</h4>
-                            <p>Canva, Google Docs</p>
+                        <div class="skill-card">
+                            <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                            <h4>Design Tools</h4>
+                            <p>Canva, Figma, Adobe Creative Suite for creating professional visual content</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%;"></div>
+                            </div>
                         </div>
-                        <div class="skill-card animate-slide-up-delay">
-                            <i class="fab fa-linkedin"></i>
-                            <h4>LinkedIn Visibility</h4>
-                            <p>Networking & Personal Branding</p>
+                        <div class="skill-card">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <h4>Professional Networking</h4>
+                            <p>LinkedIn optimization and networking strategies for career growth</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%;"></div>
+                            </div>
                         </div>
-                        <div class="skill-card animate-slide-up-delay-2">
-                            <i class="fas fa-cloud"></i>
-                            <h4>Cloud Tools</h4>
-                            <p>Google Drive, Zoom, Slack</p>
+                        <div class="skill-card">
+                            <i class="fas fa-cloud" aria-hidden="true"></i>
+                            <h4>Cloud Computing</h4>
+                            <p>Google Workspace, Microsoft 365, and cloud-based collaboration tools</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%;"></div>
+                            </div>
                         </div>
-                        <div class="skill-card animate-slide-up-delay-3">
-                            <i class="fas fa-users"></i>
-                            <h4>Remote Collaboration</h4>
-                            <p>Communication & Teamwork</p>
+                        <div class="skill-card">
+                            <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                            <h4>Data Analysis</h4>
+                            <p>Excel, Google Sheets, and basic data visualization skills</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -184,217 +204,227 @@
         </div>
     </section>
 
-    <!-- Slide 3: What's Holding People Back -->
-    <section id="slide3" class="slide slide-3">
+    <!-- Slide 3: Mindset -->
+    <section class="slide slide-3" id="slide-3">
         <div class="container">
             <div class="slide-content">
-                <h1 class="slide-title">It's Not Just Skills. It's Mindset.</h1>
+                <h1 class="slide-title">It's Not Just Skills. It's <span class="highlight">Mindset</span></h1>
                 
                 <div class="tug-of-war">
                     <div class="doubt-side">
-                        <h3>Doubt</h3>
-                        <div class="excuse-list">
-                            <div class="excuse animate-slide-left">
-                                <i class="fas fa-times-circle"></i>
-                                <p>"I'm not ready yet..."</p>
-                            </div>
-                            <div class="excuse animate-slide-left-delay">
-                                <i class="fas fa-times-circle"></i>
-                                <p>"I don't know where to start."</p>
-                            </div>
-                            <div class="excuse animate-slide-left-delay-2">
-                                <i class="fas fa-times-circle"></i>
-                                <p>"What if I fail?"</p>
-                            </div>
+                        <h3><i class="fas fa-times-circle" aria-hidden="true"></i> Doubt & Excuses</h3>
+                        <div class="excuse">
+                            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                            "I'm too old to learn technology"
+                        </div>
+                        <div class="excuse">
+                            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                            "I don't have time"
+                        </div>
+                        <div class="excuse">
+                            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                            "It's too complicated"
+                        </div>
+                        <div class="excuse">
+                            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                            "I'll do it tomorrow"
                         </div>
                     </div>
-                    
+
                     <div class="vs-section">
                         <div class="rope-visual">
                             <div class="rope"></div>
-                            <div class="vs-text">VS</div>
                         </div>
+                        <div class="vs-text">VS</div>
                     </div>
-                    
+
                     <div class="action-side">
-                        <h3>Action</h3>
-                        <div class="courage-message animate-slide-right">
-                            <i class="fas fa-lightbulb"></i>
-                            <p><strong>The real difference isn't talent — it's courage.</strong></p>
+                        <h3><i class="fas fa-check-circle" aria-hidden="true"></i> Action & Growth</h3>
+                        <div class="courage-message">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
                             <ul>
-                                <li>Courage to show up</li>
-                                <li>Courage to learn in public</li>
-                                <li>Courage to take the first step</li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i> Start small, think big</li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i> Progress over perfection</li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i> Every expert was once a beginner</li>
+                                <li><i class="fas fa-star" aria-hidden="true"></i> Your future self will thank you</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
-                <div class="reminder-box animate-fade-in-up">
-                    <h3>Remember:</h3>
-                    <p>"You don't need to feel ready. You just need to be willing."</p>
+
+                <div class="reminder-box">
+                    <h3><span class="highlight">Remember:</span></h3>
+                    <p>"You don't need to feel ready to get started. You just need to get started to feel ready."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Slide 4: Let's Get Practical -->
-    <section id="slide4" class="slide slide-4">
+    <!-- Slide 4: Essential Digital Tools -->
+    <section class="slide slide-4" id="slide-4">
         <div class="container">
             <div class="slide-content">
-                <h1 class="slide-title">Essential Digital Tools for Job Seekers & Side Hustlers</h1>
+                <h1 class="slide-title">Essential <span class="highlight">Digital Tools</span></h1>
                 
                 <div class="tools-categories">
-                    <div class="tool-category animate-fade-in">
+                    <div class="tool-category">
                         <div class="category-header">
-                            <i class="fas fa-tools"></i>
-                            <h3>CV & Cover Letter Tools</h3>
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                            <h3>CV & Cover Letter</h3>
                         </div>
-                        <div class="tool-list">
-                            <div class="tool-item">
-                                <i class="fab fa-canva"></i>
-                                <span>Canva</span>
-                            </div>
-                            <div class="tool-item">
-                                <i class="fab fa-google"></i>
-                                <span>Google Docs</span>
-                            </div>
-                            <div class="tool-item">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Teal (job tracking)</span>
-                            </div>
+                        <ul class="tool-list">
+                            <li class="tool-item">
+                                <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                                <span>Canva - Professional templates</span>
+                            </li>
+                            <li class="tool-item">
+                                <i class="fas fa-file-word" aria-hidden="true"></i>
+                                <span>Google Docs - Collaborative editing</span>
+                            </li>
+                            <li class="tool-item">
+                                <i class="fas fa-pdf" aria-hidden="true"></i>
+                                <span>PDF converters - Universal format</span>
+                            </li>
+                        </ul>
+                        <div class="tip">
+                            💡 Tip: Use Canva templates for eye-catching designs that stand out!
                         </div>
                     </div>
 
-                    <div class="tool-category animate-fade-in-delay">
+                    <div class="tool-category">
                         <div class="category-header">
-                            <i class="fas fa-search"></i>
-                            <h3>Job Search & Visibility</h3>
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                            <h3>Job Search</h3>
                         </div>
-                        <div class="tool-list">
-                            <div class="tool-item">
-                                <i class="fab fa-linkedin"></i>
-                                <span>LinkedIn</span>
-                            </div>
-                            <div class="tool-item">
-                                <i class="fas fa-building"></i>
-                                <span>Glassdoor</span>
-                            </div>
-                            <div class="tool-item">
-                                <i class="fas fa-briefcase"></i>
-                                <span>Indeed</span>
-                            </div>
-                        </div>
-                        <p class="tip">Learn how to optimize your profile for maximum visibility</p>
-                    </div>
-
-                    <div class="tool-category animate-fade-in-delay-2">
-                        <div class="category-header">
-                            <i class="fas fa-comments"></i>
-                            <h3>Communication & Remote Work</h3>
-                        </div>
-                        <div class="tool-list">
-                            <div class="tool-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>Gmail (professional tips)</span>
-                            </div>
-                            <div class="tool-item">
-                                <i class="fas fa-video"></i>
-                                <span>Zoom (etiquette)</span>
-                            </div>
-                            <div class="tool-item">
-                                <i class="fas fa-laptop"></i>
-                                <span>Remote work tools</span>
-                            </div>
+                        <ul class="tool-list">
+                            <li class="tool-item">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <span>LinkedIn - Professional networking</span>
+                            </li>
+                            <li class="tool-item">
+                                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                                <span>Indeed - Job aggregator</span>
+                            </li>
+                            <li class="tool-item">
+                                <i class="fas fa-globe" aria-hidden="true"></i>
+                                <span>Company websites - Direct applications</span>
+                            </li>
+                        </ul>
+                        <div class="tip">
+                            💡 Tip: Optimize your LinkedIn profile - it's your 24/7 job application!
                         </div>
                     </div>
 
-                    <div class="tool-category bonus animate-fade-in-delay-3">
+                    <div class="tool-category">
                         <div class="category-header">
-                            <i class="fas fa-star"></i>
-                            <h3>Bonus: Side Hustle Tools</h3>
+                            <i class="fas fa-comments" aria-hidden="true"></i>
+                            <h3>Communication</h3>
                         </div>
-                        <div class="tool-list">
-                            <div class="tool-item">
-                                <i class="fas fa-robot"></i>
-                                <span>Notion AI</span>
-                            </div>
-                            <div class="tool-item">
-                                <i class="fas fa-brain"></i>
-                                <span>ChatGPT prompts</span>
-                            </div>
-                            <div class="tool-item">
-                                <i class="fas fa-magic"></i>
-                                <span>Basic automation</span>
-                            </div>
+                        <ul class="tool-list">
+                            <li class="tool-item">
+                                <i class="fab fa-zoom" aria-hidden="true"></i>
+                                <span>Zoom - Video conferencing</span>
+                            </li>
+                            <li class="tool-item">
+                                <i class="fab fa-slack" aria-hidden="true"></i>
+                                <span>Slack - Team messaging</span>
+                            </li>
+                            <li class="tool-item">
+                                <i class="fab fa-microsoft" aria-hidden="true"></i>
+                                <span>Microsoft Teams - Collaboration</span>
+                            </li>
+                        </ul>
+                        <div class="tip">
+                            💡 Tip: Master video call etiquette - mute when not speaking!
                         </div>
-                        <p class="tip">Use free tools to launch income-generating side hustles</p>
+                    </div>
+
+                    <div class="tool-category bonus">
+                        <div class="category-header">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                            <h3>Side Hustle</h3>
+                        </div>
+                        <ul class="tool-list">
+                            <li class="tool-item">
+                                <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                                <span>Fiverr - Freelance services</span>
+                            </li>
+                            <li class="tool-item">
+                                <i class="fas fa-handshake" aria-hidden="true"></i>
+                                <span>Upwork - Professional freelancing</span>
+                            </li>
+                            <li class="tool-item">
+                                <i class="fas fa-store" aria-hidden="true"></i>
+                                <span>Etsy - Creative marketplace</span>
+                            </li>
+                        </ul>
+                        <div class="tip">
+                            💡 Pro Tip: Start building your side income streams today!
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Slide 5: Final Message + CTA -->
-    <section id="slide5" class="slide slide-5">
+    <!-- Slide 5: From Learning to Earning -->
+    <section class="slide slide-5" id="slide-5">
         <div class="container">
             <div class="slide-content">
-                <h1 class="slide-title">From Learning to Earning: What Will You Do Next?</h1>
+                <h1 class="slide-title">From Learning to <span class="highlight">Earning</span></h1>
                 
                 <div class="final-points">
-                    <div class="final-point animate-fade-in">
-                        <i class="fas fa-map-pin"></i>
-                        <p>The future of work is already here.</p>
+                    <div class="final-point">
+                        <i class="fas fa-seedling" aria-hidden="true"></i>
+                        <p><strong>Start Today:</strong> Every expert was once a beginner. Take the first step now.</p>
                     </div>
-                    <div class="final-point animate-fade-in-delay">
-                        <i class="fas fa-map-pin"></i>
-                        <p>Digital skills are not optional — they're essential.</p>
+                    <div class="final-point">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <p><strong>Continuous Learning:</strong> Technology evolves fast. Stay ahead by learning continuously.</p>
                     </div>
-                    <div class="final-point animate-fade-in-delay-2">
-                        <i class="fas fa-map-pin"></i>
-                        <p>The market rewards those who take action — not just those who collect certificates.</p>
+                    <div class="final-point">
+                        <i class="fas fa-network-wired" aria-hidden="true"></i>
+                        <p><strong>Build Networks:</strong> Your network is your net worth. Connect with like-minded professionals.</p>
                     </div>
                 </div>
 
-                <div class="quote-section animate-fade-in-up">
+                <div class="quote-section">
                     <blockquote>
-                        "If you stay ready, you won't need to get ready."
+                        "The best time to plant a tree was 20 years ago. The second best time is now."
                     </blockquote>
                 </div>
 
                 <div class="cta-section">
-                    <h3>Call-to-Action:</h3>
+                    <h3>Ready to Transform Your <span class="highlight">Future</span>?</h3>
                     <div class="cta-items">
-                        <div class="cta-item animate-bounce">
-                            <i class="fas fa-rocket"></i>
-                            <p>Start small, stay consistent</p>
+                        <div class="cta-item">
+                            <i class="fas fa-play-circle" aria-hidden="true"></i>
+                            <p>Start Learning Today</p>
                         </div>
-                        <div class="cta-item animate-bounce-delay">
-                            <i class="fas fa-lightbulb"></i>
-                            <p>Apply what you've learned immediately</p>
+                        <div class="cta-item">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            <p>Join Our Community</p>
                         </div>
-                        <div class="cta-item animate-bounce-delay-2">
-                            <i class="fas fa-paper-plane"></i>
-                            <p>Connect with me on LinkedIn or DM me for resources</p>
+                        <div class="cta-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <p>Get Personalized Guidance</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-section">
-                    <div class="profile-card animate-scale-in">
+                    <div class="profile-card">
                         <div class="profile-image">
-                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-tie" aria-hidden="true"></i>
                         </div>
                         <h4>Victor Adekunle</h4>
-                        <p>Digital Skills Advocate & Career Coach</p>
+                        <p>Digital Skills Trainer & Career Development Specialist</p>
                         <div class="social-links">
-                            <a href="#" class="social-link linkedin">
-                                <i class="fab fa-linkedin"></i>
-                                LinkedIn
+                            <a href="https://linkedin.com/in/victoradekunle" class="social-link linkedin" target="_blank" rel="noopener noreferrer" aria-label="Victor Adekunle's LinkedIn Profile">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                             </a>
-                            <a href="#" class="social-link email">
-                                <i class="fas fa-envelope"></i>
-                                Email Me
+                            <a href="mailto:victor@example.com" class="social-link email" aria-label="Email Victor Adekunle">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -402,11 +432,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Progress Indicator -->
-    <div class="progress-bar">
-        <div class="progress-fill"></div>
-    </div>
 
     <script src="script.js"></script>
 </body>
